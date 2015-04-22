@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This project installs Ruby version 2.1.0 which allows you to execute Ruby applications on [Resin.io](http://resin.io).
+This project installs Ruby which allows you to execute Ruby applications on [Resin.io](http://resin.io).
 
 This is a very simple project that is an example of how to run Ruby code on a Raspberry Pi. 
 
