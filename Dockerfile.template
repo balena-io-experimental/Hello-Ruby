@@ -1,9 +1,8 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-systemd
+FROM resin/%%RESIN_MACHINE_NAME%%-debian
 
-RUN apt-get update \
-	&& apt-get install -y ruby \
-	# Remove package lists to free up space 
-	&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -yq --no-install-recommends \
+    ruby && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 #switch on systemd init system in container
 ENV INITSYSTEM on
